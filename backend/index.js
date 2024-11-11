@@ -13,7 +13,7 @@ dotenv.config();
 connectionofDb();
 
 ///////////////port number///////////////////
-const PORT = process.env.PORT || 8000;
+const PORT = process.env.PORT || 8001;
 
 /////////////////middlewares////////////////
 app.use(express.json());
