@@ -50,7 +50,7 @@ function AddProperty() {
          }
       }
 
-      axios.post('http://localhost:8000/api/owner/postproperty', formData, {
+      axios.post('https://house-rent-self.vercel.app//api/owner/postproperty', formData, {
          headers: {
             Authorization: `Bearer ${localStorage.getItem('token')}`,
             'Content-Type': 'multipart/form-data',

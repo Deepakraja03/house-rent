@@ -17,7 +17,10 @@ const PORT = process.env.PORT || 8001;
 
 /////////////////middlewares////////////////
 app.use(express.json());
-app.use(cors());
+const corsOptions = {
+  origin: 'https://house-rent-2024.vercel.app',
+};
+app.use(cors(corsOptions));
 
 /////////////////routes/////////////////////
 app.use("/uploads", express.static(path.join(__dirname, "uploads")));
