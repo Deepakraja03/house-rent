@@ -14,7 +14,7 @@ const AllProperty = () => {
 
    const getAllProperty = async () => {
       try {
-         const response = await axios.get('https://house-rent-self.vercel.app//api/admin/getallproperties', {
+         const response = await axios.get('https://house-rent-self.vercel.app/api/admin/getallproperties', {
             headers: { 'Authorization': `Bearer ${localStorage.getItem("token")}` }
          });
 

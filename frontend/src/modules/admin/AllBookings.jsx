@@ -14,7 +14,7 @@ const AllBookings = () => {
 
    const getAllBooking = async () => {
       try {
-         const response = await axios.get('https://house-rent-self.vercel.app//api/admin/getallbookings', {
+         const response = await axios.get('https://house-rent-self.vercel.app/api/admin/getallbookings', {
             headers: { 'Authorization': `Bearer ${localStorage.getItem("token")}` }
          });
 

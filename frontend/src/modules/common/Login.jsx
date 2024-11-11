@@ -32,7 +32,7 @@ const Login = () => {
     if (!data?.email || !data?.password) {
       return alert("Please fill all fields");
     } else {
-      axios.post('https://house-rent-self.vercel.app//api/user/login', data)
+      axios.post('https://house-rent-self.vercel.app/api/user/login', data)
         .then((res) => {
           if (res.data.success) {
             message.success(res.data.message);

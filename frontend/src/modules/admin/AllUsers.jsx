@@ -19,7 +19,7 @@ const AllUsers = () => {
 
    const getAllUser = async () => {
       try {
-         const response = await axios.get('https://house-rent-self.vercel.app//api/admin/getallusers', {
+         const response = await axios.get('https://house-rent-self.vercel.app/api/admin/getallusers', {
             headers: { 'Authorization': `Bearer ${localStorage.getItem("token")}` }
          });
 
@@ -35,7 +35,7 @@ const AllUsers = () => {
 
    const handleStatus = async (userid, status) => {
       try {
-         await axios.post('https://house-rent-self.vercel.app//api/admin/handlestatus', { userid, status }, {
+         await axios.post('https://house-rent-self.vercel.app/api/admin/handlestatus', { userid, status }, {
             headers: { 'Authorization': `Bearer ${localStorage.getItem("token")}` }
          }).then((res) => {
             if (res.data.success) {
